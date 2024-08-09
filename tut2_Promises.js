@@ -20,3 +20,13 @@ new Promise(function(res,req) {
 }).then(function() {
     console.log("Promise 2 resolved");
 })
+
+const PromiseThree = new Promise(function(res,req) {
+    setTimeout(function() {
+        res({username: "John Doe", email: "johndoe@example.com"});
+    }, 1000)
+})
+
+PromiseThree.then(function(data) {
+    console.log(data);
+})
