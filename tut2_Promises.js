@@ -1,5 +1,5 @@
 
-const PormiseOne = new Promise(function(res,reject) {
+const promiseOne = new Promise(function(res,reject) {
     //Do an async task
     setTimeout(function() {
         console.log('Async task completed');
@@ -7,7 +7,7 @@ const PormiseOne = new Promise(function(res,reject) {
     }, 1000);
 })
 
-PormiseOne.then(function() {
+promiseOne.then(function() {
     console.log("Promise 1 resolved");
 })
 
@@ -21,17 +21,17 @@ new Promise(function(res,reject) {
     console.log("Promise 2 resolved");
 })
 
-const PromiseThree = new Promise(function(res,reject) {
+const promiseThree = new Promise(function(res,reject) {
     setTimeout(function() {
         res({username: "John Doe", email: "johndoe@example.com"});
     }, 1000)
 })
 
-PromiseThree.then(function(data) {
+promiseThree.then(function(data) {
     console.log(data);
 })
 
-const PromiseFour = new Promise(function(res,reject) {
+const promiseFour = new Promise(function(res,reject) {
     setTimeout(function(){
 
         let error = false;
@@ -43,7 +43,7 @@ const PromiseFour = new Promise(function(res,reject) {
     }, 1000)
 })
 
-PromiseFour
+promiseFour
 .then((user) => {
     console.log(user);
 
@@ -56,3 +56,9 @@ PromiseFour
 .catch(function(error) {
     console.error(error);
 })
+.finally(function() {
+    console.log('Promise completed');
+})
+
+
+
