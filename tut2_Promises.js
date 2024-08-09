@@ -5,7 +5,11 @@ const PormiseOne = new Promise(function(res,req) {
         console.log('Async task completed');
         res()
     }, 1000);
-});
+})
+
+PormiseOne.then(function() {
+    console.log("Promise 1 resolved");
+})
 
 new Promise(function(res,req) {
     setTimeout(function(){
