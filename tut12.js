@@ -7,6 +7,14 @@ class User {
 
     }
 
+    get email(){
+        return this._email.toUpperCase();
+    }
+
+    set email(newEmail){
+        this._email = newEmail.toLowerCase();
+    }
+
     get password(){
         return this._password.toUpperCase();
     }
@@ -18,3 +26,5 @@ class User {
 
 const argus = new User('argus@example.com', 'password123');
 console.log(argus.password);
+console.log(argus.email);
+console.log(argus);
