@@ -1,6 +1,13 @@
 //Math PI 
 
-const descriptor = Object.getOwnPropertyDescriptor(Math, 'PI'); // { value: 3.141592
+const descripter = Object.getOwnPropertyDescriptor(Math, 'PI');
 
+console.log(descripter);
 
-console.log(descriptor);
+const chai = {
+    name: "Ginger chai",
+    price: 250,
+    isAvailable: true
+}
+
+console.log(chai)
