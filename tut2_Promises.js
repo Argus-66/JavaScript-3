@@ -78,22 +78,22 @@ async function consumePromiseFive() {
 
 consumePromiseFive();
 
-async function getAllUsers() {
-  try {
-    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+// async function getAllUsers() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
-    const data = await response.json();
-    console.log(data);
+//     const data = await response.json();
+//     console.log(data);
 
-  } catch (error) {
-    console.log("Error fetching users: ", error);
-  }
-}
+//   } catch (error) {
+//     console.log("Error fetching users: ", error);
+//   }
+// }
 
-getAllUsers();
+// getAllUsers();
 
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://api.github.com/users/argus-66")
 .then((response) => {
     return response.json()
 })
