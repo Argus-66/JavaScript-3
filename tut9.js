@@ -28,5 +28,5 @@ class Teacher extends User{
 
 const iphone = new Teacher("Iphone", "iphone@example.com");
 iphone.logMe();
-console.log(iphone.createID()); //Error: static method 'createID' cannot be called on an instance of class 'Teacher'
+//console.log(iphone.createID()); //Error: static method 'createID' cannot be called on an instance of class 'Teacher'
 
