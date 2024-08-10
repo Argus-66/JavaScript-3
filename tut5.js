@@ -73,3 +73,6 @@ String.prototype.trueLength = function() {
 
 anotherUsername.trueLength()
 
+"Argus".trueLength();
+"Coffee".trueLength();
+
