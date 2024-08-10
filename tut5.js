@@ -21,4 +21,12 @@ Object.prototype.argus = function() {
     console.log(`Argus is present in all objects`);
 }
 
+
+Array.prototype.heyArgus = function(){
+    console.log(`Hey Argus!`);
+}
+
 heroPower.argus()
+myHeroes.argus()
+myHeroes.heyArgus()
+//heroPower.heyArgus()
