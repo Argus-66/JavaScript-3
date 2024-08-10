@@ -6,6 +6,14 @@ class User {
         this.password = password;
 
     }
+
+    get password(){
+        return this._password.toUpperCase();
+    }
+
+    set password(newPassword){
+        this._password = newPassword.toLowerCase();
+    }
 }
 
 const argus = new User('argus@example.com', 'password123');
