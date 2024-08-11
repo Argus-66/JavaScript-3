@@ -1,10 +1,21 @@
 //Lexical Scoping and Closure
 
-function init(){
-    var name = "Mozilla";
-    function displayName(){
-        console.log(name);
+// function init(){
+//     var name = "Mozilla";
+//     function displayName(){
+//         console.log(name);
+//     }
+//     displayName();
+// }
+// init();
+
+function outer(){
+    let username = "argus"
+    function inner(){
+        console.log("inner: ", username);
     }
-    displayName();
+    inner();
+
 }
-init();
+outer();
+console.log("TOO outer", username); // ReferenceError: username is not defined
