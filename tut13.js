@@ -26,3 +26,7 @@ function User(email, password) {
 }
 
 const chai = new User('john.doe@example.com', 'P@ssw0rd');
+
+console.log(chai.email);
+
+console.log(chai.password);
