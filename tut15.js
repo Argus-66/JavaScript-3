@@ -14,8 +14,11 @@ function outer(){
     function inner(){
         console.log("inner: ", username);
     }
+    function innerTwo(){
+        console.log("innerTwo: ", username);
+    }
     inner();
-
+    innerTwo()
 }
 outer();
 console.log("TOO outer", username); // ReferenceError: username is not defined
